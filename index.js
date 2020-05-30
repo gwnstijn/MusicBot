@@ -33,8 +33,6 @@ client.on("message", async message => {
   } else if (message.content.startsWith(`${prefix}stop`)) {
     stop(message, serverQueue);
     return;
-  } else {
-    message.channel.send("Je moet een geldige opdracht invoeren!");
   }
 });
 
